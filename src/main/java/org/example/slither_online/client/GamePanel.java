@@ -408,14 +408,14 @@ public class GamePanel extends JPanel implements ActionListener {
 
         g2d.setColor(Color.WHITE);
         g2d.setFont(new Font("Arial", Font.BOLD, 40));
-        String gameOverText = "Game Over! Your score: " + score;
+        String gameOverText = "Вы проиграли! Счет: " + score;
         FontMetrics fm = g2d.getFontMetrics();
         int textWidth = fm.stringWidth(gameOverText);
         int textHeight = fm.getHeight();
         g2d.drawString(gameOverText, (WIDTH - textWidth) / 2, (HEIGHT - textHeight) / 2 - 50);
 
         g2d.setFont(new Font("Arial", Font.BOLD, 30));
-        String playAgainText = "Play Again";
+        String playAgainText = "Играть Снова";
         fm = g2d.getFontMetrics();
         int playAgainWidth = fm.stringWidth(playAgainText);
         int playAgainHeight = fm.getHeight();
@@ -423,7 +423,7 @@ public class GamePanel extends JPanel implements ActionListener {
         g2d.draw(playAgainButton);
         g2d.drawString(playAgainText, (WIDTH - playAgainWidth) / 2, (HEIGHT - playAgainHeight) / 2 + 20 + playAgainHeight);
 
-        String exitText = "Exit Game";
+        String exitText = "Выход";
         fm = g2d.getFontMetrics();
         int exitWidth = fm.stringWidth(exitText);
         int exitHeight = fm.getHeight();
@@ -431,7 +431,7 @@ public class GamePanel extends JPanel implements ActionListener {
         g2d.draw(exitButton);
         g2d.drawString(exitText, (WIDTH - exitWidth) / 2, (HEIGHT - exitHeight) / 2 + 70 + exitHeight);
 
-        String mainMenuText = "Main Menu";
+        String mainMenuText = "Главное Меню";
         fm = g2d.getFontMetrics();
         int mainMenuWidth = fm.stringWidth(mainMenuText);
         int mainMenuHeight = fm.getHeight();
